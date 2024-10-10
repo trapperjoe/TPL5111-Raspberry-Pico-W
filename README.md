@@ -9,8 +9,9 @@ During "idle time" the TL5111 will consume only 20µA which is a really tiny val
 
 A good example is a temperature sensor. Usually temperature does not change much within a minute, so if we can shut off the Pico for 10 minutes and then let it run for 30
 seconds, then the ratio of on/off time becomes 1:20. With this assumption we expect that the battery life can be extended by the factor of 20. 
-With the above mentioned battery pack a Pico consuming 50mA on average will run a maximum of 48 hours continously until the battery is completely flat. 
 
-Fortunately with a TPL5111 module we can basically ignore the power, which is consumed during idle times. As such the Pico will now run for max. 20x48 hours = 960 hours. 
-This corresponds to 40 days and it is a much more acceptable value than 48 hours. We can experiment with different on/off times and see what fits best. 
-The  TPL5111 can handle idle times between one second and two hours. This should be anough for many practical applications.  
+Now, with the above mentioned battery pack a Pico consuming 50mA on average will run a maximum of 48 hours continously until the battery is completely flat. 
+If we can extend the battery life by a factor of 20, then the Pico can run for 960 hours with the same battery pack. This corresponds to 40 days. 
+Fortunately with a TPL5111 module we can basically ignore the power, which is consumed during idle times. 
+Then we can experiment with different on/off times and see what fits best for our purpose. 
+The  TPL5111 can handle idle times between one second and two hours. This is a limitation, but should be anough for many practical applications.  
