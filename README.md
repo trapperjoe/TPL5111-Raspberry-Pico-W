@@ -1,4 +1,4 @@
-The low powwer enable timer TPL5111 from Adafruit allows for extremly low energy to be "wasted" during times, when there is  no processing power needed. 
+The low power enable timer TPL5111 from Adafruit allows for extremly low energy to be "wasted" during times, when there is  no processing power needed. 
 A Raspberry Pi Pico W for instance would typically require a current of 50mA or more during run time. There are several options to reduce the current via software. 
 But all I have seen so far cannot bring the current below 1mA. theoretical a good battery pack of 2400mAh would give the Pico enough power to run 100 hours. 
 But what if you want to run longer, without having the possibility to connect to a wired adapter?
