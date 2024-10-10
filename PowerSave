@@ -1,0 +1,4 @@
+This demo shows how a Raspberry Pi Pico W can run several days (or even weeks) on battery power by using an Enable Timer TPL5111.
+The timer will periodically wake up the Pico and shut it off once the Pico has finished the work. The periodical wake up time can be controlled 
+by a potentiometer (or optionally by an external resistor). The power consumption of a TPL5111 is very low (below 50 µA) and as such the run time 
+of the Pico can be optimized for jobs that only take a few seconds and run periodically every houor (as an example).  
