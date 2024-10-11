@@ -12,6 +12,11 @@ seconds, then the ratio of on/off time becomes 1:20. With this assumption we exp
 
 Now, with the above mentioned battery pack a Pico consuming 50mA on average will run a maximum of 48 hours continously until the battery is completely flat. 
 If we can extend the battery life by a factor of 20, then the Pico can run for 960 hours with the same battery pack. This corresponds to 40 days. 
-Fortunately with a TPL5111 module we can basically ignore the power, which is consumed during idle times. 
+
+Fortunately enough with a TPL5111 module we can practically ignore the power, which is consumed during idle times, as it is extremely low! 
 Then we can experiment with different on/off times and see what fits best for our purpose. 
-The  TPL5111 can handle idle times between one second and two hours. This is a limitation, but should be anough for many practical applications.  
+The  TPL5111 can handle idle times between one second and two hours. This is a limitation, but should still be sufficient for many useful applications.  
+
+There is also a little push button on the TPL5111. If pressed it will finish the sleep period and immediately start the microcontroller. 
+This is very useful for developing and tests, because you certainly do not want to wait until the idle period is over, while testing.  
+
