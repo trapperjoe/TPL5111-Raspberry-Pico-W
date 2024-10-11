@@ -7,7 +7,7 @@ read0 = adc.read_u16() #  Read value from ADC0
 
 # Opening a log file with "a" for appending
 with open("log_status.txt", "a") as logFil:
-    logFil.write(str(adc0))
+    logFil.write(str(read0))
     logFil.write('\n') # Add a new line
     logFil.flush() # Clear nuffer 
     logFil.close() # Ensure data is written
