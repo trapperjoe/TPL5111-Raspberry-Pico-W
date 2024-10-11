@@ -9,7 +9,7 @@ read0 = adc.read_u16() #  Read value from ADC0
 with open("log_status.txt", "a") as logFil:
     logFil.write(str(read0))
     logFil.write('\n') # Add a new line
-    logFil.flush() # Clear nuffer 
+    logFil.flush() # Write to file 
     logFil.close() # Ensure data is written
     
 DONE.on() # Assert DONE signal; powers down Pico
